@@ -1,0 +1,406 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    height: 65px;
+    background-color: #243B93;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.header_list_logo {
+
+    margin: 0 150px;
+
+}
+
+.header_list {
+    color: white;
+    font-size: 18px;
+    width: 170px;
+    height: 18.8px;
+    background-color: #243B93;
+    margin: 23px 0px;
+}
+
+a {
+    color: white;
+}
+
+.header_list_two_tapes {
+    color: white;
+    width: 150px;
+    height: 37px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header_list_language {
+    width: 35px;
+    height: 13px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin: 0 150px 0 10px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserve_house {
+
+    height: 65px;
+    background-color: #BFF0FF;
+    font-size: 48px;
+    font-style: italic;
+    padding: 0 0 0 160px;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.drop_down_list {
+    height: 57px;
+    font-size: 28px;
+    color: #0000009C;
+    border: 1px solid black;
+
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_down_list_text {
+    text-align: center;
+    height: 36px;
+}
+
+.arrow {
+    width: 34px;
+    height: 33px;
+    position: absolute;
+    padding-left: 77%;
+}
+
+.card {
+    height: 300px;
+    background-color: #2CBDEB;
+    display: flex;
+    margin: 20px auto;
+    box-shadow: 0px 0px 60px 4px #2CBDEB;
+    position: relative;
+    justify-content: center;
+}
+
+.image {
+    padding: 30px 52px;
+}
+
+.description {
+    width: 50%;
+    height: 205px;
+    background-color: white;
+    margin-top: 65px;
+    padding: 5px;
+    font-size: 22px;
+    text-align: left;
+    position: relative;
+}
+
+.line {
+    border-top: 3px solid #FFFFFF;
+    position: relative;
+    bottom: 22px;
+}
+
+#fixed-div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #300C6A4D;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fixed-div:hover {
+    background-color: #300c6a89;
+}
+
+.star {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+
+.star:hover path {
+    fill: #FFF500;
+}
+
+.head_card {
+    height: 47px;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    position: absolute;
+    margin-top: -68px;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202846;
+}
+
+.key_background {
+
+    display: flex;
+    width: 250px;
+    height: 46px;
+    position: absolute;
+    right: -85px;
+    bottom: 8px;
+    color: #FFFFFF;
+}
+
+.key_background:hover rect {
+    fill: #EF075B
+}
+
+.key_background_text {
+    font-size: 24px;
+    position: absolute;
+    left: 47px;
+    top: 7px;
+}
+
+.personal_cabinet {
+    display: flex;
+    align-items: center;
+    font-size: 44px;
+    color: #243B93;
+    border: 2px solid black;
+    height: 85px;
+    background: linear-gradient(to right, #FFE601, #55D6FF);
+    padding-left: 7.5%;
+    font-style: italic;
+    margin: 50px auto;
+}
+
+.visiting_card {
+    width: 85%;
+    margin: 0 auto;
+    height: 498px;
+    background: linear-gradient(#859EFF, #69ffd250);
+       display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    Width: 196px;
+    Height: 184px;
+    margin: 0 auto;
+    bottom: 70px;
+    display: flex;
+    position: relative;
+}
+
+.fase_icon {
+    width: 35%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.change_avatar {
+    font-size: 24px;
+    color: ffffff;
+}
+
+.key_background1 {
+    display: flex;
+    width: 250px;
+    height: 46px;
+    position: inherit;
+    margin: 0 auto;
+    bottom: 30px;
+    color: #FFFFFF;
+}
+
+.key_background1:hover rect {
+    fill: #EF075B
+}
+
+.key_background_text1 {
+    font-size: 24px;
+    position: absolute;
+    left: 47px;
+    top: 7px;
+}
+
+.key_background_ch_av {
+    display: flex;
+    width: 250px;
+    height: 46px;
+    position: inherit;
+    margin: 0 auto;
+    color: #FFFFFF;
+    bottom: 35px;
+}
+
+.key_background_ch_av:hover rect {
+    fill: #EF075B
+}
+
+.key_background_seting {
+
+    display: flex;
+    width: 250px;
+    height: 46px;
+    position: inherit;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.key_background_seting:hover rect {
+    fill: #EF075B
+}
+
+.сontakt_info {
+    width: 43vw;
+    height: 470px;
+    padding: 50px;
+
+    display: flex;
+    position: absolute;
+    right: 12vw;
+    flex-direction: column;
+}
+
+tbody {
+    border: 2px solid #402684;
+}
+
+.contact_name {
+    height: 80px;
+    width: 100;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: 4px solid white;
+    display: flex;
+    align-items: center;
+    color: #353C57;
+}
+
+.contact_name_w400 {
+    font-weight: 400;
+}
+
+.contact_name_with_border {
+    height: 80px;
+    width: 100;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    color: #353C57;
+}
+
+.line1 {
+    border-bottom: 3px #110b0b;
+    width: 100%;
+}
+
+.gradient_revers {
+    background: linear-gradient(to left, #FFE601, #55D6FF);
+}
+
+.a_tag {
+    text-decoration: none;
+    color: #353C57;
+}
+
+.Exit_Button {
+    width: 175px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    background-color: #243B93;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Exit_Button:hover {
+    background-color: #EF075B
+}
+
+table {
+    height: 220px;
+    width: 60%;
+    padding: 0;
+    border-spacing: 65px 0;
+    font-size: 32px;
+    margin-left: -57px;
+}
+
+.contact {
+    width: 91%;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.emphasis {
+    border-bottom: 3px solid #000000;
+}
+
+.map {
+    height: 290px;
+    width: 500px;
+    border-radius: 40px;
+    border: 3px solid #243B93;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+    height: 65px;
+    background-color: #243B93;
+    font-size: 18px;
+    padding-left: 7.5%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+iframe {
+    height: 290px;
+    right: 0px;
+}

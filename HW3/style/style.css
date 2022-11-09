@@ -1,0 +1,147 @@
+.h1 {
+
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin: 50px 0px;
+}
+
+.line {
+    width: 402px;
+    border-bottom: 5px solid #3E45E8;
+}
+
+.header {
+    font-family: 'M PLUS 1', sans-serif;
+    height: 110px;
+    background-color: rgba(0, 255, 255, 0);
+    text-align: center;
+    color: #E8C23E;
+    font-size: 48px;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.center {
+    padding-top: 25px;
+}
+
+.headerSpan {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'M PLUS 1', sans-serif;
+    color: #3E45E8
+}
+
+.headerSpanMarcellus {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Marcellus', serif;
+    color: #DFE31E;
+    font-weight: 400;
+}
+
+.banner {
+    background-image: url("../image/image\ 1.jpg");
+    height: 803px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-top: 206px;
+}
+
+.content {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 4.5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 48px;
+    height: 479px;
+    width: 80%;
+    background-image: url("../image/flag.jpg");
+    background-repeat: no-repeat;
+    font-weight: 400;
+    padding-left: 55px;
+    padding-top: 0px;
+}
+
+.main {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0px 45px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border: 1px solid black;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 33px;
+    box-shadow: 0px 4px 57px 3px #0000005a;
+}
+
+.padding {
+    padding: 0px 50px;
+}
+
+.card__margine {
+    margin: 0 3%;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #1E8DF2;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.card__subtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #E8C23E;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.mapUkraine {
+    width: 812px;
+}
+
+.rectangle {
+    width: 591px;
+    height: 121px;
+    background-color: #2A61F0;
+    font-size: 64px;
+    color: #FFFFFF;
+
+}
+
+.contactInfo {
+    margin-top: 20px;
+    height: 250px;
+    background-color: #2F4A4B;
+    padding-top: 0px;
+}
+
+.mail {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #A89D9D;
+
+}

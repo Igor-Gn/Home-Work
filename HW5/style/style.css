@@ -1,0 +1,378 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+:root {
+    --color-black: #222222;
+    --color-black2: rgba(255, 255, 255, 0.080);
+    --color-black3: #292B2E;
+    --color-footer-black: #1C1C1C;
+    --color-white: #ffffff;
+    --color-orange: #FFB742;
+    --color-orange-sat: #ffb7428e;
+    --color-white2: #D4D4D4;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+.header {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.header_menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--color-white);
+    font-weight: 600;
+
+}
+
+.menu:hover {
+    color: var(--color-orange);
+}
+
+.button {
+    background-color: var(--color-black2);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-black2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me {
+    height: 55px;
+    width: 120px;
+}
+
+.button:hover {
+    background-color: var(--color-orange);
+    color: var(--color-black);
+}
+
+.button:hover div {
+    color: var(--color-black);
+}
+
+.link_deko2:hover {
+    color: var(--color-white);
+}
+
+.familiarization {
+    font-family: 'Inter', sans-serif;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a:hover {
+    color: var(--color-orange);
+}
+
+.link_deko {
+    text-decoration: underline;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.trade {
+    height: 91px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.work_place {
+    height: 51px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 5%;
+}
+
+.card {
+    width: 32%;
+    background-color: var(--color-black3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    background-color: var(--color-orange);
+
+}
+
+.card:hover div {
+    color: var(--color-black);
+}
+
+.achievement {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    height: 70px;
+    width: 50%;
+    text-align: center;
+}
+
+.amount {
+    color: var(--color-orange);
+    font-size: 32px;
+}
+
+.description {
+    color: var(--color-white);
+    font-size: 16px;
+
+}
+
+.who-i-am {
+    height: 42px;
+    width: 148px;
+    color: var(--color-white);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.photo {
+    width: 29vw;
+    margin: 1vw;
+    display: flex;
+    align-items: stretch;
+
+}
+
+.self-presentation {
+    display: flex;
+}
+
+.content {
+    color: var(--color-white2);
+}
+
+.Hire_Me {
+    width: 148px;
+    height: 54px;
+    color: var(--color-white);
+    margin-top: 50px;
+}
+
+.about {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.About-Me {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.button2 {
+    background-color: var(--color-black2);
+    border-radius: 10px;
+    border: 1px solid var(--color-black);
+}
+
+.button2:hover {
+    background-color: var(--color-orange-sat);
+}
+
+.skills {
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.icon-table1 {
+    display: flex;
+}
+
+.left-margine {
+    margin-left: 4vw;
+}
+
+.my-works {
+    height: 42px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-top: 150px;
+}
+
+.presentation {
+    margin: auto 3vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials {
+    font-family: 'Poppins', sans-serif;
+    height: 42px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-top: 150px;
+}
+
+.customer-card {
+    min-height: 450px;
+    width: 28vw;
+    padding: 50px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.reviews {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.client {
+    display: flex;
+}
+
+.full-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.profession {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-top: 15px;
+}
+
+.info-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 27px;
+}
+
+.margine-90-250 {
+    margin-top: 90px;
+    margin-bottom: 250px;
+}
+
+.testimonials {
+    height: 42px;
+    width: 190px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-top: 150px;
+}
+
+.footer {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-footer-black);
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: var(--color-white);
+}
+
+.footer-text16 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-text18 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-text-head {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.footer-menu {
+    line-height: 50px;
+}
+
+.footer-info {
+    width: 230px;
+    line-height: 50%;
+}

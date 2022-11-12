@@ -1,7 +1,4 @@
-/* font-family: 'Inter', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Work Sans', sans-serif; */
+
 
 :root {
     --color-black: #222222;
@@ -16,6 +13,7 @@ font-family: 'Work Sans', sans-serif; */
 
 body {
     background-color: var(--color-black);
+    overflow-x: hidden;
 }
 
 .header {

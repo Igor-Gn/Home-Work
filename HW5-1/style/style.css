@@ -350,8 +350,7 @@ ul li::marker {
     content: url(../image/Rectangle\ 2.png);
     display: inline-block;
     list-style-position: outside;
-    align-content: center;
-
+    vertical-align: text-top;
 }
 
 ul li {
@@ -360,6 +359,7 @@ ul li {
     font-weight: 500;
     color: var(--color-wite);
     line-height: 3rem;
+
 }
 
 .priсe-prata {
@@ -478,10 +478,6 @@ ul li {
     display: flex;
     justify-content: flex-start;
 
-}
-
-.illumination:hover {
-    color: var(--color-orange);
 }
 
 .footer1 {

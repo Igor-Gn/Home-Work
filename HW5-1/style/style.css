@@ -344,13 +344,15 @@ a:hover {
     align-items: center;
 }
 
-ul li::marker {
+
+ul li::before {
     width: 20px;
     height: 5px;
     content: url(../image/Rectangle\ 2.png);
     display: inline-block;
     list-style-position: outside;
     vertical-align: text-top;
+    margin-top: -16px;
 }
 
 ul li {
@@ -359,6 +361,7 @@ ul li {
     font-weight: 500;
     color: var(--color-wite);
     line-height: 3rem;
+    list-style: none;
 
 }
 
@@ -393,6 +396,7 @@ ul li {
 .button:hover {
     background-color: var(--color-orange);
     transition: background-color 0.8s;
+    color: #000000;
 }
 
 .ouro {

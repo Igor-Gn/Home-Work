@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>HW6 Form</title>
+</head>
+
+<body>
+    <form action="inpute">
+        <div class="form">
+            <div class="header  size24">
+                Intake Main Flow
+            </div>
+            <div class="size14">
+                <span class="red">*</span> Mandatory field
+            </div>
+            <div class="size20 Information">Information</div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form1"  class="size16">Intake Type <span class="red">* (select)</span> </label>
+                    <select class="field" id="form1" required>
+                        <option value="Referral">Referral</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="form2" class="size16">Enrollment Initiation Date query</label>
+                    <div class="pad">
+                        <input type="date" id="form2" value="2022-11-20" class="field calendar background-grey">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form3" class="size16">phone</label>
+                    <input type="tel" placeholder="+38(0XX) XXX XX XX" maxlength="13" id="form3" class="field">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form4" class="size16">Application Category<span class="red">*</span> </label>
+                        <input type="text" id="form4" value="Child Support" class="field arrow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="email" class="size16">email</label>
+                    <input type="email" placeholder="******@mail.com" id="email" class="field">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form5" class="size16">Enrollment Submission Date (Optional)</label>
+                        <input type="date" value="2022-11-20" id="form5" required
+                            class="field calendar background-grey">
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form6" class="size16">Application Registration (Optional)</label>
+                    <input type="text" value="APP0000116" id="form6" class="field arrow text-blue">
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form7" class="size16">Additional Information Requested Date (Optional)</label>
+                    <input type="date" value="2022-11-20" id="form7" class="field calendar">
+
+                </div>
+                <div>
+                    <div class="field-checkbox">
+                        <div>
+                            <input type="checkbox" id="form8" class="checkbox-pink">
+                            <label for="form8" class="label-pink">Purged</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form9" class="size16">Remaining Days Before Referral is Purged (Optional)</label>
+                    <input type="number" value="13" min="0" max="13" id="form9" class="field">
+
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form10" class="size16">Exempt from Paternity (Optional) (select)<span
+                                class="red">*</span></label>
+                        <input type="text" placeholder="No" required id="form10" list="ch" class="field arrow">
+                        <datalist id="ch">
+                            <option value="Yes">
+                            <option value="No">
+
+                            </option>
+                            </option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form11" class="size16">Fee Payment Date (Optional)</label>
+                    <div class="pad">
+                        <input type="date" value="2022-11-20" id="form11" class="field calendar">
+                    </div>
+
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form12" class="size16">Enrollment Status (Optional)</label>
+                        <input type="text" placeholder="Worklisted" id="form12" class="field arrow">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="string line">
+                <div class="field-checkbox">
+                    <div>
+                        <input type="checkbox" id="form13" class="checkbox-pink">
+                        <label for="form13" class="label-pink">Application Fee Processed</label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="size20 Information">Maternity Information</div>
+
+            <div class="string">
+                <div class="column">
+                    <input type="checkbox" id="form15" class="checkbox-pink">
+                    <label for="form15" class="label-pink">
+                        <div class="text-ch-width">
+                            Are you requesting child support services for an unborn child?
+                        </div>
+
+                    </label>
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form16" class="size16">Other known biological parent? (Optional)</label>
+                        <input type="text" placeholder="None" id="form16" list="ch" class="field arrow">
+                        <datalist id="ch">
+                            <option value="Yes">
+                            <option value="No">
+
+                            </option>
+                            </option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="size20 Information">Official Use</div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form17" class="size16">Case Category (select)</label>
+                    <select type="text"  placeholder="Active IV-A" id="form17" list="Case" class="field">
+                        <datalist id="Case">
+                            <option value="Active IV-A">Active IV-A</option>
+                            <option value="Active III-A">Active III-A</option>
+                            <option value="Active II-A">Active II-A</option>
+                            <option value="Active I-A">Active I-A</option>
+                        </datalist>
+                    </select>
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form18" class="size16">IV-D Indicator <span class="red">*</span></label>
+                        <select type="text" value="Non-IV-D" required id="form18" list="Indicator" class="field">
+                            <datalist id="Indicator">
+                                <option value="Non-III-D Indicator">Non-III-D Indicator</option>
+                                <option value="Non-II-D Indicator">Non-II-D Indicator</option>
+                                <option value="Non-I-D Indicator">Non-I-D Indicator</option>
+                            </datalist>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form19" class="size16">Arrears Only Indicator (Optional)</label>
+                    <input type="tel" placeholder="None" id="form19" class="field arrow">
+                </div>
+                <div class="column">
+                    <label for="form20" class="size16">Intergovernmental Case Category (Optional)</label>
+                    <input type="text" placeholder="None" id="form20" class="field arrow">
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form21" class="size16">Assigned County of Ownership (Optional)</label>
+                    <input type="tel" placeholder="None" id="form21" class="field arrow">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form22" class="size16">Intergovernmental Case Type (Optional)</label>
+                        <input type="text" placeholder="None" id="form22" class="field arrow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form23" class="size16">Intergovermental Case Status (details)</label>
+                    <input type="tel" placeholder="None" id="form23" class="field arrow">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form24" class="size16">Case Number</label>
+                        <input type="text" placeholder="Search Case Number" id="form24" list="case-n"
+                            class="field search">
+                        <datalist id="case-n">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            </option>
+                            </option>
+                            </option>
+                            </option>
+                            </option>
+                            </option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form23" class="size16">Special Handling Indicator for Applicant (Optional)</label>
+                    <input type="tel" placeholder="None" id="form23" class="field arrow">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form24" class="size16">Referral Number</label>
+                        <input type="text" placeholder="Search Referral Number" id="form24" list="ref-n"
+                            class="field search">
+                        <datalist id="ref-n">
+                            <option value="22222">
+                            <option value="33333">
+                            <option value="44444">
+                            <option value="55555"></option>
+                            </option>
+                            </option>
+                            </option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string line">
+                <div class="column">
+                    <label for="form25" class="size16">Special Handling Indicator for Other Parent (Optional)</label>
+                    <input type="tel" placeholder="None" id="form25" class="field arrow">
+                </div>
+                <div class="column">
+                </div>
+            </div>
+
+            <div class="size20 Information">System Information</div>
+
+            <div class="string">
+                <div class="column">
+                    <label for="form26" class="size16">Enrollment Taken by User</label>
+                    <input type="text" value="Search Input" id="form26" class="field search">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form27" class="size16">Intake Supervisor (Optional)</label>
+                        <input type="text" placeholder="Search" id="form27" list="Supervisor" class="field search">
+                        <datalist id="Supervisor">
+                            <option value="Олександр">
+                            <option value="Євген">
+                            <option value="Діана">
+                            <option value="Ксенія">
+                            <option value="Світлана">
+                            </option>
+                            </option>
+                            </option>
+                            </option>
+                            </option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="string line">
+                <div class="column">
+                    <label for="form28" class="size16">Worker (Optional)</label>
+                    <input type="text" value="Search Input" id="form28" class="field search">
+                </div>
+                <div>
+                    <div class="column">
+                        <label for="form29" class="size16">Owner (Optional)</label>
+                        <input type="text" value="Rajaneesh Banal" id="form29" class="field search text-blue">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <input type="submit" value="Next" class="button-next size16">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

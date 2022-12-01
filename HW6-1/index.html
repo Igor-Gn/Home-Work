@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Form Input your information</title>
+</head>
+
+<body>
+    <div class="sheet">
+        <div class="form">
+            <div><a class="welcome" href="#">Allready a member?&nbsp;&nbsp;<img src="./image/icon.svg" alt="icon"></a>
+            </div>
+            <div class="header">
+                <div class="heading">Input your information</div>
+                <div class="description">
+                    We need you to help us with some basic information for your account creation. Here are our <span> <a
+                            class="terms" href="#">terms and conditins</a> </span>.
+                    Please read them carefully. We are GDRP compliiant
+                </div>
+            </div>
+            <form action="input">
+
+                <div class="string">
+                    <div class="column">
+                        <label for="form1" class="label">First name <span><img class="right"
+                                    src="./image/question mark.svg" alt="mark-?" title="Help"></span> </label>
+                        <input required type="text" placeholder="John" id="form1" class="input">
+                    </div>
+
+                    <div class="column">
+                        <label for="form2">
+                            <div class="label">Last name<span><img class="right" src="./image/question mark.svg"
+                                        alt="mark-?" title="Help"></span>
+
+                            </div>
+                        </label>
+                        <input required type="text" id="form2" placeholder="Smit" class="input">
+                    </div>
+
+                </div>
+                <div class="string">
+                    <div class="column">
+                        <label for="form3" class="label">Company
+                            <span>
+                                <img class="right" src="./image/question mark.svg" alt="mark-?" title="Help">
+                            </span>
+                        </label>
+                        <input required type="text" placeholder="Company Name" id="form3" class="input">
+                    </div>
+
+                    <div class="column">
+                        <label for="form4">
+                            <div class="label">Work email<span><img class="right" src="./image/question mark.svg"
+                                        alt="mark-?" title="Help"></span>
+                            </div>
+                        </label>
+                        <input required type="email" id="form4" placeholder="*****@mail.com" class="input">
+                    </div>
+                </div>
+
+                <div class="string">
+                    <div class="column">
+                        <label for="form6" class="label">Number of employees
+                            <span>
+                                <img class="right" src="./image/question mark.svg" alt="mark-?" title="Help">
+                            </span>
+                        </label>
+                        <div class="cells">
+                            <input id="one" type="radio" name="Number-employees" class="input-radio">
+                            <label class="label-radio" for="one">0&lt;20</label>
+                            <input id="two" type="radio" name="Number-employees" class="input-radio">
+                            <label class="label-radio" for="two">20&lt;50</label>
+                            <input id="three" type="radio" name="Number-employees" class="input-radio">
+                            <label class="label-radio" for="three">50&lt;100</label>
+                            <input id="four" type="radio" name="Number-employees" class="input-radio">
+                            <label class="label-radio" for="four">100&lt;...</label>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <label for="form5">
+                            <div class="label">Phone number<span><img class="right" src="./image/question mark.svg"
+                                        alt="mark-?" title="Help"></span>
+                            </div>
+                        </label>
+                        <input type="tel" maxlength="15" id="form5" placeholder="+380xxxxxxxxx" class="input">
+                    </div>
+                </div>
+
+                <div class="line-dashed"></div>
+
+                <div class="string">
+                    <div class="column">
+                        <label for="form11" class="label">Password
+                            <span>
+                                <img class="right" src="./image/question mark.svg" alt="mark-?" title="Help">
+                            </span>
+                        </label>
+                        <input type="password" maxlength="16" id="form11" class="input">
+                    </div>
+
+                    <div class="column">
+                        <label for="form12">
+                            <div class="label">Confirm password
+                                <span>
+                                    <img class="right" src="./image/question mark.svg" alt="mark-?" title="Help">
+                                </span>
+                            </div>
+                        </label>
+                        <input type="password" maxlength="16" id="form12" class="input">
+                    </div>
+                </div>
+
+                <div class="line-dashed"></div>
+
+                <div class="footer">
+                    <div>
+                        <input required class="checkbox" type="checkbox" id="form-checkbox">
+                        <label class="footer-label" for="form-checkbox">I agree with <a class="terms" href="">terms and
+                                conditins</a>.</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Register" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div><img class="img" src="./image/Layer 12.png" alt="image"></div>
+    </div>
+</body>
+
+</html>

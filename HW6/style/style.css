@@ -14,6 +14,7 @@
     padding: 0 45px;
     background-color: var(--color-backgound-grey);
     padding-bottom: 100px;
+    margin: 0 auto;
 }
 
 .header {
@@ -87,7 +88,7 @@ select {
 .calendar {
     background-image: url(../image/calendar.png);
     background-repeat: no-repeat;
-    background-position-x: 97%;
+    background-position-x: 91%;
     background-position-y: center;
 }
 

@@ -1,0 +1,131 @@
+:root {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section {
+    display: grid;
+    background-color: #FFB084;
+    margin: 50px auto;
+    grid-template-columns: 1.2fr 2fr;
+    width: 755px;
+    padding: 4.5%;
+    border-radius: 20px;
+    gap: 18px 25px;
+}
+
+.header {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.photo {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-shadow: 7px 7px #000000;
+    background-color: #ffffff;
+}
+
+.card:active {
+    box-shadow: none;
+    transform: translate(7px, 7px);
+}
+
+.first-column {
+    display: grid;
+    grid-template-rows: 0.8fr 0.2fr;
+    row-gap: 18px;
+}
+
+.second-column {
+    display: grid;
+    grid-template-rows: 0.3fr 0.7fr;
+    row-gap: 18px;
+}
+
+.second-colum-botton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
+.second-colum-botton1 {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    row-gap: 18px;
+}
+
+.second-colum-botton2 {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    row-gap: 18px;
+}
+
+.about {
+    font-size: 12px
+}
+
+.slogan {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bold600 {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.identation {
+    margin: 15px 0;
+}
+
+.green {
+    color: #29A71E;
+}
+
+.blue {
+    color: #3675B0;
+}
+
+.crimson {
+    color: #E13535;
+}
+
+.goals {
+    box-shadow: 7px 7px #29A71E;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.grille {
+    list-style-type: none;
+}
+
+.grille::before {
+    content: "#";
+}
+
+.no-padding {
+    padding-left: 0px;
+}
+
+.dream-companies {
+    box-shadow: 7px 7px #3675B0;
+}
+
+.frustrations {
+    box-shadow: 7px 7px #E13535;
+}

@@ -10,10 +10,10 @@ document.write(`Введене 2-ге число ${b} <br>`);
 document.write(`Введене 3-тє число ${c} <br>`);
 var maxNumber = a;
 if (b > maxNumber) {
-    numberOfValuesNumber = b;
+    maxNumber = b;
 }
 if (c > maxNumber) {
-    numberOfValuesNumber = c;
+    maxNumber = c;
 }
 
 if (a == b || a == c || b == c) {

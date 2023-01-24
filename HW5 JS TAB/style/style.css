@@ -26,6 +26,7 @@ body {
     display: flex;
     padding: 5px;
     z-index: 2;
+    background-color: #e0e0e0;
 }
 
 .tab__content {
@@ -38,6 +39,16 @@ body {
     overflow: hidden;
 }
 
+.open {
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+.op {
+    display: block;
+}
+
 span {
     font-size: 16px;
     font-weight: 400;
@@ -48,20 +59,11 @@ span {
     grid-template-columns: repeat(3, 90px);
 }
 
-input {
-    display: none;
-}
-
-.hide {
-    display: none;
-    background-color: #3f3f3f;
-}
-
 .line {
     border-top: 1px solid #000000;
     display: flex;
     position: absolute;
     width: 100%;
     top: 46px;
-    z-index: 0;
+    z-index: 1;
 }

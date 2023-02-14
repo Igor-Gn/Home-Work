@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form__typeOfDebt {
+    display: flex;
+}
+
+.form__typeOfCreditor {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 400px;
+}
+
+.form__header {
+    background: aqua;
+    text-align: center;
+}
+
+.form__footer {
+    background: aqua;
+    text-align: center;
+}
+
+.form>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 225px;
+}
+
+#cost {
+    color: red;
+    font-weight: bold;
+}
+
+.form__typeOfCreditor {
+    width: 75%;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.form .form__header {
+    justify-content: center;
+}

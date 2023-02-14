@@ -1,0 +1,55 @@
+<!-- 3. Создать массив, который будет хранить в себе информацию о сотрудниках предприятия. Каждый элемент масива — объект,
+       содержащий свойства: name, sName, age, occupation, и метод show, который выводит всю информацию о пользователе.
+       Реализовать заполнение массива пользователем. По окончанию заполнения — вывести информацию о сотрудниках.
+    
+    4. Для предыдущего задания создайте функцию, которая будет принимать в себя массив объектов-сотрудников, и каждому из объектов
+       будет добавлять новое свойство "salary", хранящее зарплату сотрудника. 
+       Зарплата расчитывается, исходя из значения свойства "occupation" следующим образом:
+           • "director" — 3000;
+           • "manager" — 1500;
+           • "programmer" — 2000;
+           • для остальных значений — 1000.
+       После выполнения функции — вывести информацию о сотрудниках.
+           
+    5. Для задания 3 создать метод, позволяющий отсортировать массив сотрудников по одному из свойств: name, sName, age, occupation, salary.
+       Параметр для сортировки принимается от пользователя.
+       После выполнения функции — вывести информацию о сотрудниках. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link type="image/x-icon" href="./image/info_icon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Інформація про співробітників</title>
+</head>
+
+<body>
+    <div class="input_form">
+        <div class="header">Введіть інформацію про нового співробітника </div>
+        <label for="name">Ім'я: </label>
+        <input type="text" name="name" id="name">
+        <label for="lastName">Прізвище: </label>
+        <input type="text" name="lastName" id="lastName">
+        <label for="age">Вік:</label>
+        <input type="number" value="18" min="18" max="59" name="age" id="age">
+        <label for="occupation">Професія:</label>
+        <select type="text" name="occupation" id="occupation" list="occupation">
+            <option value="Менеджер">Менеджер</option>
+            <option value="Програміст">Програміст</option>
+            <option value="other">інша</option>
+        </select>
+        <button class="addEmployee">Додати інформацію</button>
+        <button class="cancel">Показати список співробітників</button>
+    </div>
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

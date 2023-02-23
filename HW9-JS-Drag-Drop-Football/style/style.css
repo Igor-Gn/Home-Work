@@ -1,0 +1,70 @@
+body {
+    background-color: aquamarine;
+}
+
+.stadium {
+    height: 75vh;
+    width: 72vw;
+    background-image: url(../img/football-pole.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-size: 100% 100%;
+    margin: 1% auto;
+}
+
+.football__field {
+    height: 97%;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gates1 {
+    width: 1.5%;
+    height: 20%;
+    border: 2px solid white;
+}
+
+.ball {
+    height: 40px;
+    position: absolute;
+}
+
+.gates2 {
+    width: 1.5%;
+    height: 20%;
+    border: 2px solid white;
+}
+
+.scoreboard {
+    background-color: #87ceeb;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.score {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0.5turn, #3f87a6, #ebf8e1a7, #3f87a6);
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team__name {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: linear-gradient(#3f87a6, #ebf8e1, #3f87a6);
+    font-size: 20px;
+    font-weight: 600;
+}

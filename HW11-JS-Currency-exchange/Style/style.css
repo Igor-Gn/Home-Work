@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Squada One', cursive;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  margin: 0 auto;
+  font-weight: bold;
+  background-color: rgb(51, 81, 94);
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  font-size: 18px;
+  margin: 20px 50px;
+  text-align: end;
+  color: white;
+}
+
+.wrapper {
+  display: none;
+}
+
+#currency2 {
+  order: 3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5vw;
+  padding: 10px 40px;
+}
+
+.grid_item {
+  font-family: 'Oxanium', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  border: 1px solid black;
+  background: linear-gradient(#6e95ff, #ffffff, #3b3727)
+}
+
+.footer {
+  height: 50px;
+
+}
+
+.exchange {
+  padding: 20px 160px;
+  display: grid;
+  grid-template-columns: .3fr 1fr .2fr;
+  gap: .5vw;
+}
+
+.h3 {
+  font-size: 32px;
+  color: rgb(240, 240, 157);
+  text-align: center;
+}
+
+.resultExchange {
+  font-size: 25px;
+  font-weight: bolder;
+  order: 4;
+  color: rgb(173, 132, 31);
+  text-align: center;
+  background-color: #dcdcdc;
+  border-radius: 25px 0 0 25px;
+}
+
+.input__amount-of-money {
+  order: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 25px 0 0 25px;
+}
+
+.button2 {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  order: 3;
+  height: 70px;
+  margin: auto auto auto 30px;
+}
+
+.exchange__input1 {
+  display: grid;
+  order: 2;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0 25px 25px 0;
+}
+
+.exchange__input2 {
+  order: 5;
+  display: grid;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0 25px 25px 0;
+}
+
+.order5 {
+  order: 5;
+}
+
+.order2 {
+  order: 2;
+}

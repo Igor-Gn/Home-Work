@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Image/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>JavaScript Key Kode</title>
+
+<body>
+<header>
+  <div class="header">
+    <img class="header__logo" src="./Image/Logo.png" alt="logo">
+    <a href="https://www.toptal.com/developers/keycode/table" target="_blank"><button class="header__button">Table</button></a>
+
+  </div>
+</header>
+
+  <div class="container">
+    <div>
+      <div class="header1">JavaScript Key Code <span class="header__code"></span></div>
+      <div class="header1__which"></div>
+      <div class="header1__info">Key Code Information</div>
+    </div>
+    <main>
+      <div class="cards">
+        <div class="card-item">
+          <h4>event.key</h4>
+          <div class="key"></div>
+          <div class="card-item-footer">The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.</div>
+        </div>
+        <div class="card-item">
+          <h4>event.code</h4>
+          <div class="code"></div>
+          <div class="card-item-footer">The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.</div>
+
+        </div>
+        <div class="card-item">
+          <h4>event.which</h4>
+          <div class="which"></div>
+          <div class="card-item-footer">event.which and event.keyCode are deprecated in modern browsers. Use .key or .code instead.</div>
+        </div>
+        <div class="card-item">
+          <h4>History</h4>
+          <ul class="historyBlock"></ul>
+          <div class="card-item-footer"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./JS/JavaScript.js"></script>
+</body>
+
+</html>

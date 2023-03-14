@@ -1,0 +1,153 @@
+:root {
+  --color-blue: #204ecf;
+  --colro-white: #ffffff;
+  font-family: proxima-nova, Arial, sans-serif;
+  color: #262d3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--color-blue);
+  padding: 0 4vw;
+  height: 52px;
+}
+
+.header1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+
+}
+
+.header1__which {
+  height: 250px;
+  font-size: 220px;
+  color: #262d3d;
+  font-weight: 400;
+  line-height: 220px;
+
+}
+
+.header1_info {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.header__button {
+  height: 25px;
+  width: 160px;
+  border: solid 1px rgba(255, 255, 255, 0.32);
+  border-radius: 5px;
+  background-color: var(--color-blue);
+  color: var(--colro-white);
+}
+.header__button:hover{
+  border: solid 1px #ffffff
+}
+.header__logo {
+  height: 50px;
+}
+
+.container {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+  margin: 4vw;
+
+}
+
+.cards>div,
+.cards>ul {
+  /* border: 1px solid red; */
+  height: 300px;
+}
+
+div,
+ul {
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+li {
+  width: 30px;
+  border: 2px solid #262d3d;
+  color: #262d3d;
+  border-radius: 4px;
+}
+
+h4 {
+  background-color: var(--color-blue);
+  color: var(--colro-white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #262d3d;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.card-item-footer {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start;
+  background-color: rgba(170, 170, 170, 0.242);
+  color: #262d3d;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 4px;
+}
+.card-item:hover{
+  scale: 1.04;
+  transition: 500ms;
+}
+
+.historyBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100px;
+  margin: 0 auto;
+  color: #262d3d;
+
+}

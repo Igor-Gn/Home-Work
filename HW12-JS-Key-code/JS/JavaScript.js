@@ -9,15 +9,14 @@ window.addEventListener("keyup", (event) => {
 
     array.forEach(el => {
         if (event.key.toUpperCase() === el) {
-            historyBlock.removeChild(historyBlock.childNodes[array.indexOf(el)])
-            let updateArr = array.splice(array.indexOf(el), 1)
+            historyBlock.removeChild(historyBlock.childNodes[array.indexOf(el)]);
+            array.splice(array.indexOf(el), 1);
         }
     })
     key.innerHTML = event.key;
     code.innerHTML = event.code;
     which.innerHTML = event.which;
-    console.log(event.which);
-
+    
     addLetterHistory();
 
     headerCode.innerHTML = event.which;

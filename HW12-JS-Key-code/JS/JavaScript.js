@@ -3,7 +3,7 @@ const key = document.querySelector(".key"),
     which = document.querySelector(".which"),
     historyBlock = document.querySelector(".historyBlock"),
     headerCode = document.querySelector(".header__code"),
-    headerWhich = document.querySelector(".header1__which");
+    headerWhich = document.querySelector(".container__which");
 
 window.addEventListener("keyup", (event) => {
 

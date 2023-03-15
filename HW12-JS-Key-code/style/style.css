@@ -23,14 +23,14 @@ body {
   height: 52px;
 }
 
-.header1 {
+.container__header {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
 
 }
 
-.header1__which {
+.container__which {
   height: 250px;
   font-size: 220px;
   color: #262d3d;
@@ -39,7 +39,7 @@ body {
 
 }
 
-.header1_info {
+.container__info {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;

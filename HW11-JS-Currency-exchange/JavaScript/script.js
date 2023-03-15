@@ -1,19 +1,16 @@
 const grid = document.querySelector('.grid');
 const header = document.querySelector('.header');
-const currency1 = document.querySelector(".currency1");
+const currencyInput = document.querySelector(".currencyInput");
 const currencyName = document.querySelector('#currency__name');
 const currencyName1 = document.querySelector('#currency__name1');
-const currency3 = document.querySelector('.exchange__input1');
-const currency4 = document.querySelector('.exchange__input2');
+const exchangeInputIncoming = document.querySelector('.exchange__input-incoming');
+const exchangeInputEntranse = document.querySelector('.exchange__input-entranse');
 const amountOfMoney = document.querySelector('.input__amount-of-money');
 const resultExchange = document.querySelector('.resultExchange');
-const buttonChange = document.querySelector('.button2');
-let chosenCurrency1;
-let chosenCurrency2;
-let chosenCurrency3 = 1;
-let chosenCurrency4;
+const buttonChange = document.querySelector('.button-change');
+let exchangeRateEntranse = 1;
+let exchangeRateIncoming;
 let usd;
-
 let data;
 
 fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
@@ -40,70 +37,74 @@ setTimeout(function () {
           <div class="grid_rate">${element.rate}</div>
         </div>`);
 
-            // create element option in currency1
+            // create element option in currencyInput
             let option = document.createElement("option");
             option.innerHTML = `${element.cc} ${element.txt}`;
-            currency1.appendChild(option);
+            currencyInput.appendChild(option);
         }
     });
 
-    const currency3 = currency1.cloneNode(true);  // clone currency1 list to currency2
-    currency3.id = "currency3";
-    currencyName.insertAdjacentElement('beforeend', currency3);
-
-    const currency4 = currency1.cloneNode(true);  // clone currency1 list to currency2
-    currency4.id = "currency4";
-    currencyName1.insertAdjacentElement('beforeend', currency4);
-
+    const exchangeInputIncoming = currencyInput.cloneNode(true);
+    exchangeInputIncoming.id = "exchangeInputIncoming";
+    currencyName.insertAdjacentElement('beforeend', exchangeInputIncoming);
+    const exchangeInputEntranse = currencyInput.cloneNode(true);
+    exchangeInputEntranse.id = "exchangeInputEntranse";
+    currencyName1.insertAdjacentElement('beforeend', exchangeInputEntranse);
     usd = data[24].txt;
-    chosenCurrency4 = data[24].rate;
-    currency4.placeholder = usd;
-
-
+    exchangeRateIncoming = data[24].rate;
+    exchangeInputEntranse.placeholder = usd;
     amountOfMoney.addEventListener('keyup', () => {
         converter();
     })
 
 }, 600);
 
+//Функція конвертування валюти
 function converter() {
     const amountOfMoneyValue = +amountOfMoney.value;
-    let result = chosenCurrency3 / chosenCurrency4 * amountOfMoneyValue;
+    let result = exchangeRateEntranse / exchangeRateIncoming * amountOfMoneyValue;
     resultExchange.innerHTML = result.toFixed(2);
 }
 
-currency3.addEventListener("change", () => {
+// перевірка на зміну валюти в вікні вибору
+exchangeInputIncoming.addEventListener("change", () => {
     data.forEach(element => {
 
-        if (element.cc == currency3.value.slice(0, 3)) {
-            chosenCurrency3 = element.rate;
+        if (element.cc == exchangeInputIncoming.value.slice(0, 3)) {
+            exchangeRateEntranse = element.rate;
         }
-        if (currency3.value == '') {
-            chosenCurrency3 = 1;
+        if (exchangeInputIncoming.value == '' && exchangeInputIncoming.className == 'exchange__input-incoming') {
+            exchangeRateEntranse = 1;
+        }
+        if (exchangeInputIncoming.value == '' && exchangeInputIncoming.className == 'exchange__input-incoming turnDown') {
+            exchangeRateEntranse = +data[24].rate;
         }
     })
     converter();
 })
-
-currency4.addEventListener("change", () => {
+// перевірка на зміну валюти в вікні вибору
+exchangeInputEntranse.addEventListener("change", () => {
     data.forEach(element => {
 
-        if (element.cc == currency4.value.slice(0, 3)) {
-            chosenCurrency4 = element.rate;
+        if (element.cc == exchangeInputEntranse.value.slice(0, 3)) {
+            exchangeRateIncoming = element.rate;
         }
-        if (currency4.value == '') {
-            chosenCurrency4 = +data[24].rate;
+        if (exchangeInputEntranse.value == '' && exchangeInputEntranse.className == 'exchange__input-entranse') {
+            exchangeRateIncoming = +data[24].rate;
+        }
+        if (exchangeInputEntranse.value == '' && exchangeInputEntranse.className == 'exchange__input-entranse turnUp') {
+            exchangeRateIncoming = 1;
         }
     })
     converter();
 })
-
+// зміна місць розташування валют
 buttonChange.addEventListener('click', () => {
-    currency3.classList.toggle("order5");
-    currency4.classList.toggle("order2");
-    let temp = chosenCurrency3;
-    chosenCurrency3 = chosenCurrency4;
-    chosenCurrency4 = temp;
+    exchangeInputIncoming.classList.toggle("turnDown");
+    exchangeInputEntranse.classList.toggle("turnUp");
+    let temp = exchangeRateEntranse;
+    exchangeRateEntranse = exchangeRateIncoming;
+    exchangeRateIncoming = temp;
     converter();
 })
 

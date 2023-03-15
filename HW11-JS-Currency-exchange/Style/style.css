@@ -21,10 +21,6 @@ body {
   display: none;
 }
 
-#currency2 {
-  order: 3;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,7 +42,6 @@ body {
 
 .footer {
   height: 50px;
-
 }
 
 .exchange {
@@ -80,7 +75,7 @@ body {
   border-radius: 25px 0 0 25px;
 }
 
-.button2 {
+.button-change {
   grid-row: 1/4;
   grid-column: 3/4;
   order: 3;
@@ -88,7 +83,7 @@ body {
   margin: auto auto auto 30px;
 }
 
-.exchange__input1 {
+.exchange__input-incoming {
   display: grid;
   order: 2;
   font-size: 24px;
@@ -97,7 +92,7 @@ body {
   border-radius: 0 25px 25px 0;
 }
 
-.exchange__input2 {
+.exchange__input-entranse {
   order: 5;
   display: grid;
   font-size: 24px;
@@ -106,10 +101,10 @@ body {
   border-radius: 0 25px 25px 0;
 }
 
-.order5 {
+.turnDown {
   order: 5;
 }
 
-.order2 {
+.turnUp {
   order: 2;
 }

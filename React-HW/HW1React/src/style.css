@@ -1,0 +1,44 @@
+:root {
+    font-family: 'Squada One', cursive;
+}
+
+body {
+    background-color: rgb(168, 211, 95);
+}
+
+
+table {
+    margin: 0 auto;
+    border: 5px;
+    width: 80vw;
+    border-spacing: 3px;
+}
+
+tr {
+    text-align: center;
+    background: linear-gradient(#6e95ff, #ffffff, #3b3727);
+}
+
+h1 {
+    text-align: center;
+}
+
+thead {
+    font-size: 22px;
+    height: 55px;
+    font-weight: 600;
+}
+
+td {
+    font-size: 18px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.abbreviation {
+    width: 12vw;
+}
+
+.name__currency {
+    width: 50vw;
+}

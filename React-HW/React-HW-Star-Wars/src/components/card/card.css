@@ -1,0 +1,131 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url('../../font/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+.cards {
+    background-image: url(../../image/death-star-planet.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: 0 0;
+    background-attachment: fixed;
+    height: auto;
+    padding: 0 2vw 2vw 2vw;
+
+}
+
+.link {
+    margin: 10px 0;
+    height: 24px;
+    width: 85%;
+    background-color: rgb(18, 34, 50);
+    border-radius: 8px;
+    vertical-align: baseline;
+    color: yellow;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2vw;
+    box-sizing: border-box;
+}
+
+.card {
+    font-family: HankenGrotesk;
+    color: rgb(0, 0, 0);
+    width: 230px;
+    height: 340px;
+    background-color: rgba(80, 118, 183, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(../../image/ramka-s-rvanimi-krayami-yelow.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15px;
+    transition: .5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover {
+    scale: 1.07;
+    transition: .5s;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(80, 118, 183, 0.8);
+}
+
+.card:hover>h3 {
+    color: rgba(0, 0, 0, 0.427);
+}
+
+.card:hover>img {
+    transition: .5s;
+    opacity: 1;
+}
+
+.card:hover :nth-last-child(2) {
+    opacity: 0;
+}
+
+.avatar {
+    height: 40%;
+}
+
+.image {
+    height: 77%;
+    position: absolute;
+    left: 52px;
+    top: 30px;
+    opacity: 0;
+}
+
+.image__icon {
+    height: 115px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.info__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1300px) {
+    .cards__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .cards__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:850px) {
+    .cards__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cards__container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .cards__container {
+        gap: 27px;
+    }
+}

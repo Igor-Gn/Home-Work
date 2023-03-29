@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Star-Wars;
+    src: url('../../font/Starjhol.ttf');
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__font {
+    font-family: Star-Wars;
+    font-size: 64px;
+    font-weight: 600;
+    color: chartreuse;
+    text-align: center;
+    padding: 15px 0;
+}
+

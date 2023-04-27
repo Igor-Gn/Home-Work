@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+            font-size: 14px;
+            font-weight: 400;
+            list-style-type: none;
+            line-height: 25px;
+            color: #000000;
+            padding: 0 10px;
+            cursor: default;
+            text-align: start;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .drop-down-menu {
+            width: 420px;
+            background-color: #d2d2d2;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="drop-down-menu">
+        <div class="bold">MAJOR APPLIANCES</div>
+
+        <ul class="hide">
+            <a href="">
+                <li>Ovens</li>
+            </a>
+            <a href="">
+                <li>Blast chillers</li>
+            </a>
+            <a href="">
+                <li>Microwave ovens</li>
+            </a>
+            <a href="">
+                <li>Coffee machines</li>
+            </a>
+            <a href="">
+                <li>Hobs</li>
+            </a>
+            <a href="">
+                <li>Cookers</li>
+            </a>
+            <a href="">
+                <li>Hoods</li>
+            </a>
+            <a href="">
+                <li>Refrigerators</li>
+            </a>
+            <a href="">
+                <li>Freezers</li>
+            </a>
+
+            <a href="">
+                <li>Wine coolers</li>
+            </a>
+            <a href="">
+                <li>Sinks</li>
+            </a>
+            <a href="">
+                <li>Taps</li>
+            </a>
+            <a href="">
+                <li>Dishwashers</li>
+            </a>
+            <a href="">
+                <li>Washing machines</li>
+            </a>
+            <a href="">
+                <li>Cookers</li>
+            </a>
+            <a href="">
+                <li>Tumble dryers</li>
+            </a>
+            <a href="">
+                <li>Accessories</li>
+            </a>
+        </ul>
+
+        <div class="bold">
+            SMALL APPLIANCES
+        </div>
+        <ul class="hide">
+            <a href="">
+                <li>Toasters</li>
+            </a>
+            <a href="">
+                <li>Kettles</li>
+            </a>
+            <a href="">
+                <li>Citrus juicers</li>
+            </a>
+            <a href="">
+                <li>Milk frothers</li>
+            </a>
+            <a href="">
+                <li>Stand mixers</li>
+            </a>
+            <a href="">
+                <li>Blenders</li>
+            </a>
+            <a href="">
+                <li>Hand blenders</li>
+            </a>
+        </ul>
+
+
+
+        <div class="bold">
+            SPECIAL PROJECTS
+        </div>
+        <ul class="hide">
+            <li class="bold"></li>
+            <a href="">
+                <li>Divina cucina</li>
+            </a>
+            <a href="">
+                <li>Sicily is my love</li>
+            </a>
+            <a href="">
+                <li>Refrigerator of Art</li>
+            </a>
+            <a href="">
+                <li>SMEG500</li>
+            </a>
+            <a href="">
+                <li>Mickey Mouse fridge</li>
+            </a>
+            <a href="">
+                <li>Independent FAB</li>
+            </a>
+            <a href="">
+                <li>Smeg & Coca-Cola</li>
+            </a>
+        </ul>
+
+
+
+
+    </div>
+
+
+    <script>
+        var listItem = document.querySelectorAll('.bold');
+        for (let i = 0; i < listItem.length; i++) {
+            listItem[i].addEventListener('click', showListItem);
+        }
+        function showListItem() {
+            this.nextElementSibling.classList.toggle('hide');
+        }
+
+
+
+    </script>
+</body>
+
+</html>

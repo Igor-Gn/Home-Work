@@ -472,9 +472,11 @@ button:active {
 #clientReservationDate {
     width: 150px;
 }
-#appt{
+
+#appt {
     width: 93px;
 }
+
 input {
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
@@ -1137,8 +1139,49 @@ input {
         margin: 10px 0 0 50px;
     }
 
-    .add-to-order{
+    .add-to-order {
         margin: 40px 0 30px 400px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .ingredients-pizza {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reservation-info-client {
+        width: 100%;
+    }
+
+    .menu__screen-assortment {
+        display: block;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .ingredients-pizza {
+        font-size: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .reservation-header {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .reservation-info-client {
+        line-height: 75px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .reservation-info-client {
+        line-height: 55px;
     }
 }
 

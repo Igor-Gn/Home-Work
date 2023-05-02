@@ -117,7 +117,7 @@ function addToOrderIngedients() {
     amountOfingredient = 0;
     ingredientPizzaInserted = [];
     for (let i = 0; i < ingredientButton.length; i++) {
-        if (ingredientButton[i].classList.length > 1) {
+        if (ingredientButton[i].classList.length > 2) {
             ingredientPizzaInserted.push(ingredientPizza[i]);
             amountOfingredient += 1;
         }

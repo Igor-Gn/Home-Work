@@ -1127,10 +1127,18 @@ input {
         height: 920px;
     }
 
-    .check__screen-main {
+    /* .check__screen-main {
         gap: 30px;
         grid-template-columns: 1fr 1fr;
         width: 97%;
+    } */
+
+    .check__screen-main {
+        grid-template-columns: auto;
+        gap: 30px;
+        height: inherit;
+        box-sizing: border-box;
+        padding-left: 50px;
     }
 
     .send-mail {

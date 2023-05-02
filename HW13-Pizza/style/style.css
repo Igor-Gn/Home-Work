@@ -1142,7 +1142,7 @@ input {
     }
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:430px) {
     .header-menu-right a {
         border-bottom: 2px solid var(--color-text-day);
     }

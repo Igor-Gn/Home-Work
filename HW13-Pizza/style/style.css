@@ -20,7 +20,9 @@
     background-color: var(--color-background-day);
     color: var(--color-text-day);
 }
-
+body{
+    overflow-x: hidden;
+}
 .night-style {
     --color-background-day: #151515;
     --color-text-day-menu: #FFDDC8;

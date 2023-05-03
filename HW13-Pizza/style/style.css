@@ -20,9 +20,11 @@
     background-color: var(--color-background-day);
     color: var(--color-text-day);
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .night-style {
     --color-background-day: #151515;
     --color-text-day-menu: #FFDDC8;
@@ -76,7 +78,6 @@ a:hover {
 
 .header-menu-right {
     font-size: 32px;
-
     font-weight: bold;
     display: flex;
 }
@@ -763,7 +764,6 @@ input {
 }
 
 .konstructor-screen {
-    /* height: 100vh; */
     background-color: var(--color-background-day);
 }
 
@@ -971,6 +971,10 @@ input {
         align-items: start;
     }
 
+    .label-radio {
+        width: 20%;
+    }
+
     .header-menu-right {
         flex-direction: column;
         font-size: 42px;
@@ -1051,6 +1055,19 @@ input {
 
     }
 
+    .pizza-img-slice {
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .size-pizza {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    }
+
     .cascade-list li {
         font-size: 42px;
     }
@@ -1079,7 +1096,7 @@ input {
 
     .ingredients-pizza {
         margin-left: 20px;
-        padding-top: 340px;
+        padding-top: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 93%;
     }
@@ -1127,12 +1144,6 @@ input {
         height: 920px;
     }
 
-    /* .check__screen-main {
-        gap: 30px;
-        grid-template-columns: 1fr 1fr;
-        width: 97%;
-    } */
-
     .check__screen-main {
         grid-template-columns: auto;
         gap: 30px;
@@ -1146,7 +1157,10 @@ input {
     }
 
     .ingredient {
-        margin: 10px 0 0 50px;
+        margin: 0;
+        animation: 100s rotate linear infinite;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
     .add-to-order {
@@ -1319,7 +1333,6 @@ input {
 
     .size-pizza {
         width: 100%;
-
     }
 
     .check__screen-account {
@@ -1348,10 +1361,6 @@ input {
 
     #clientReservationDate {
         width: 79%;
-    }
-
-    .ingredient {
-        margin: 10px auto;
     }
 
     .ingredients-pizza {

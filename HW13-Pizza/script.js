@@ -32,7 +32,7 @@ const numberPieces = document.querySelector('.number-pieces');
 const more = document.querySelector('.more');
 const nameCheckPizza = document.querySelector('.name__check-pizza');
 const prise = document.querySelector('.price-number');
-const ingredientsPizza = document.querySelector('.ingredients-pizza');
+const ingredientsPizza = document.querySelector('.ingredients-pizza')
 let cost;
 const costWithNotDiscont = document.querySelector('.discounted_price-all-number');
 const ingredientPizza = ['sousege', 'bacon', 'mushroom', 'octopus', 'tomato', 'olives', 'pepper', 'prawn', 'onion', 'ruccola', 'mint'];
@@ -63,7 +63,7 @@ const ingredientBtn = ['sousege', 'bacon', 'mushroom', 'octopus', 'tomato', 'oli
 nightMode.addEventListener('click', nightModeSwith);
 cuponSuccessfullyBtn.addEventListener('click', () => {
     modaWindowCuponSuccessfully.classList.toggle('hide');
-});
+})
 getDiscont.addEventListener('click', getCoupon);
 refuseDiscont.addEventListener('click', canselCoupon);
 addToOrder.addEventListener('click', addToOrderIngedients);
@@ -74,14 +74,14 @@ function checkReservationTime() {
         Swal.fire('Спочатку виберіть дату');
         reservationTime.value = '';
         return;
-    };
+    }
 
     let timeValue = reservationTime.value;
     let a = timeValue.split(':')[0] * 60 + timeValue.split(':')[1] * 1;
     if (a < 539 || a > 1261) {
         Swal.fire('Столик можливо зарезервувати з 09:00 до 21:00');
     }
-};
+}
 
 //функція розрахунку вартості замовлення при збільшенні кількості 
 more.addEventListener('click', () => {
@@ -112,7 +112,7 @@ less.addEventListener('click', () => {
 
 //функція додавання вартості власної піци до чеку
 function addToOrderIngedients() {
-    userCheck.classList.remove('hide');
+    userCheck.classList.remove('hide')
     filling = '';
     amountOfingredient = 0;
     ingredientPizzaInserted = [];
@@ -121,7 +121,7 @@ function addToOrderIngedients() {
             ingredientPizzaInserted.push(ingredientPizza[i]);
             amountOfingredient += 1;
         }
-    };
+    }
     if (amountOfingredient < 2) {
         Swal.fire('Виберіть мінімум два інгридієнти!');
     }
@@ -133,9 +133,9 @@ function addToOrderIngedients() {
         payableItemTotal.innerText = `${(prisePizzaSize + (amountOfingredient * 10)) * discount}`;
         payableItemDiscont.innerText = `${Math.ceil((prisePizzaSize + (amountOfingredient * 10)) * (1 - discount) * 100) / 100}`;
         payableToPay.innerText = `${((prisePizzaSize + (amountOfingredient * 10)) * discount) + 20}`;
-        costWithNotDiscont.innerText = `${prisePizzaSize + (amountOfingredient * 10)}`;
-    };
-};
+        costWithNotDiscont.innerText = `${prisePizzaSize + (amountOfingredient * 10)}`
+    }
+}
 
 //Фуyкція вибору розміру піци
 for (let i = 0; i < sizePizza.length; i++) {
@@ -145,6 +145,9 @@ for (let i = 0; i < sizePizza.length; i++) {
                 imgIngredient[i].style.setProperty('width', '320px');
                 sizePizzaCurrent = 'Small "L"';
                 prisePizzaSize = 200;
+                if (window.innerWidth <= 900) {
+                    ingredientsPizza.style = 'padding-top: 340px;'
+                }
             }
         }
         else if (sizePizzaMiddle.checked == true) {
@@ -153,7 +156,7 @@ for (let i = 0; i < sizePizza.length; i++) {
                 sizePizzaCurrent = 'Medium "XL"';
                 prisePizzaSize = 250;
                 if (window.innerWidth <= 900) {
-                    constructorPizzaImage.style = 'height: 440px;';
+                    ingredientsPizza.style = 'padding-top: 380px;'
                 }
 
             }
@@ -164,12 +167,12 @@ for (let i = 0; i < sizePizza.length; i++) {
                 sizePizzaCurrent = 'Big "XXL"';
                 prisePizzaSize = 300;
                 if (window.innerWidth <= 900) {
-                    constructorPizzaImage.style = 'height: 440px;'
+                    ingredientsPizza.style = 'padding-top: 460px;'
                 }
             }
-        };
+        }
     });
-};
+}
 
 function getCoupon() {
     discount = .8;
@@ -178,23 +181,23 @@ function getCoupon() {
     modalWindow.classList.toggle('hide');
     showModalWindow.classList.toggle('hide');
     modaWindowCuponSuccessfully.classList.toggle('hide');
-};
+}
 
 function addPizza() {
     this.firstElementChild.classList.toggle('hide');
     this.lastElementChild.classList.toggle('hide');
 
-};
+}
 function canselCoupon() {
     refuseDiscontDone = 1;
     modalWindow.classList.toggle('hide');
     showModalWindow.classList.toggle('hide');
-};
+}
 
 showModalWindow.addEventListener('click', function () {
     if (refuseDiscontDone !== 1) {
         modalWindow.classList.toggle('hide');
-    };
+    }
 
 });
 
@@ -203,8 +206,8 @@ clientNumber.addEventListener('keypress', () => {
 
     if (clientNumber.value.length >= 9) {
         return clientNumber.value = clientNumber.value.slice(0, 9);
-    };
-});
+    }
+})
 
 // функція перемикання нічного режиму
 function nightModeSwith() {
@@ -234,27 +237,27 @@ function nightModeSwith() {
         nightMode.children[0].className = 'night__mode';
         nightMode.children[1].className = 'night__mode hide';
         reservationScreen.style.setProperty('background-color', '#F4F4F4');
-    };
-};
+    }
+}
 
 //accordion
 const listItem = document.querySelectorAll('.accordion');
 
 for (let i = 0; i < listItem.length; i++) {
     listItem[i].addEventListener('click', showListItem);
-};
+}
 function showListItem() {
     this.nextElementSibling.classList.toggle('hide');
-};
+}
 
 for (let i = 0; i < ingredientButton.length; i++) {
     ingredientButton[i].addEventListener('click', showIngredient);
-};
+}
 // функція відображення інгридієнтів на піці-конструктору
 function showIngredient() {
     this.classList.toggle('button-pressed');
     ingredientImg[ingredientBtn.indexOf(this.classList[0])].classList.toggle('hide');
-};
+}
 
 function ValidMail() {
     const re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
@@ -263,7 +266,7 @@ function ValidMail() {
     if (valid) output = 'Адрес эл. почты введен правильно!';
     else Swal.fire('Адресa эл. почти введена невірно!');
     return valid;
-};
+}
 
 function ValidPhone() {
     const re = /^[\d\+][\d\(\)\ -]{7,10}\d$/;
@@ -272,7 +275,7 @@ function ValidPhone() {
     if (valid) output = 'Номер телефона введен правильно!';
     else Swal.fire('Номер телефона введен неправильно!');;
     return valid;
-};
+}
 const mail = document.querySelector('.mail');
 mail.addEventListener('change', ValidMail);
 function ValidMail() {
@@ -283,7 +286,7 @@ function ValidMail() {
     else output = 'Адрес электронной почты введен неправильно!';
 
     return valid;
-};
+}
 
 InpSubmit.addEventListener('click', submForm);
 
@@ -307,13 +310,13 @@ function submForm() {
     else if (reservationTime.value == '') {
         Swal.fire('Вкажіть час на який Ви плануєте замовити столик');
         return;
-    };
-};
+    }
+}
 const reservationBlank = document.querySelector('.reservation-blank');
-reservationBlank.addEventListener('click', ValidDate);
+reservationBlank.addEventListener('click', ValidDate)
 function ValidDate() {
     if (validDateRun == 0) {
-        const endDateOfTheReservation = new Date(Date.now() + (15 * 24 * 60 * 60 * 1000));
+      const endDateOfTheReservation = new Date(Date.now() + (15 * 24 * 60 * 60 * 1000));
         let year = String(new Date().getFullYear());
         let month = String(new Date().getMonth() + 1);
         if (month.length == 1) {
@@ -331,8 +334,8 @@ function ValidDate() {
         let endDateOfTheReservationDateOfMonth = (String(new Date(endDateOfTheReservation))).slice(8, 10);
         if (endDateOfTheReservationDateOfMonth.length == 1) {
             endDateOfTheReservationDateOfMonth = 0 + endDateOfTheReservationDateOfMonth;
-        };
+        }
         validDateRun = 1;
         return clientReservationDate.min = `${year}-${month}-${dateOfMonth}`, clientReservationDate.max = `${endDateOfTheReservationYear}-${endDateOfTheReservationMonth}-${endDateOfTheReservationDateOfMonth}`;
-    };
-};
+    }
+}

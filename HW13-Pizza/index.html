@@ -17,12 +17,12 @@
     <header>
         <div class="header__menu">
             <a href="">
-                <div class="logo"><img src="./image/🦆 icon _Pizza Slice_.png" alt="pizza-favicon">Mania</div>
+                <div class="logo"><img src="./image/iconPizzaSlice.png" alt="pizza-favicon">Mania</div>
             </a>
             <div class="header-menu-right">
                 <a href="">Home</a>
                 <a href="#menu-screen">Menu</a>
-                <div id="coupons" href="">Specials & Coupons</div>
+                <div id="coupons">Specials & Coupons</div>
                 <a href="#reservation__screen">Contact Us</a>
             </div>
         </div>
@@ -41,8 +41,8 @@
     <main>
         <div>
             <div id="night__mode">
-                <img class="night__mode" src="./image/🦆 icon _Cloud with Moon_.png" alt="pizza">
-                <img class="night__mode hide" src="./image/🦆 icon _Cloud with Sun_.png" alt="pizza">
+                <img class="night__mode" src="./image/iconCloudwithMoon.png" alt="iconCloudwithMoon">
+                <img class="night__mode hide" src="./image/iconCloudWithSun.png" alt="iconCloudWithSun">
             </div>
             <div class="first__screen">
                 <div class="first__screen-left">
@@ -50,7 +50,8 @@
                     <div class="first__screen-slogan">People Disappoint, But<br> Pizza Never Does.</div>
                     <div class="inp__search-location">
                         <input class="inp__search" type="search" name="location" id="search__input">
-                        <button class="serch__location"><img src="./image/🦆 icon _SearchLocation_.png" alt=""> Search
+                        <button class="serch__location"><img src="./image/iconSearchLocation.png" alt="icon-search">
+                            Search
                             Location</button>
                     </div>
                     <button class="try-now">Try now</button>
@@ -193,7 +194,7 @@
                     <form class="reservation-info-client" onsubmit="return (ValidMail()&&ValidPhone())">
                         <div>
                             <div>Name &nbsp;&nbsp;<input id="reservation-inp-name" class="reservation-inp" type="text"
-                                    name="clientName" required id="" pattern="[A-Z, a-z, А-Я, і, І, а-я]{2,15}"
+                                    name="clientName" required pattern="[A-Z, a-z, А-Я, і, І, а-я]{2,15}"
                                     title="Ім'я може містити лише літери (від 4 до 15 символів)"></div>
                             <div>E-Mail &nbsp;&nbsp;<input id="reservation-inp-email" class="reservation-inp mail"
                                     placeholder="******@mail.com" type="text" name="clientMail" required>
@@ -207,224 +208,233 @@
                                     title="Стіл можливо зарезервувати з 9:00 до 21:00" required>
                             </div>
                         </div>
-                        <div class="center-submit"><button class="send-mail"><input class="InpSubmit" type="submit"
-                                    value="Send Mail" "></button></div>
+                        <div class="center-submit"><button class="send-mail">
+                                <input class="InpSubmit" type="submit" value="Send Mail">
+                            </button></div>
                     </form>
                 </div>
             </div>
-            <div class=" konstructor-screen">
-                                <div class="kostructor__screen-title">Make Pizza To Your Taste</div>
-                                <div class="choose-size">Сhoose the size of the pizza and the ingredients</div>
-                                <div class="size-pizza">
-                                    <input id="one" type="radio" name="Number-employees" class="input-radio" checked>
-                                    <label class="label-radio" for="one">L</label>
-                                    <input id="two" type="radio" name="Number-employees" class="input-radio">
-                                    <label class="label-radio" for="two">XL</label>
-                                    <input id="three" type="radio" name="Number-employees" class="input-radio">
-                                    <label class="label-radio" for="three">XXL</label>
-                                </div>
-                                <div>
-                                    <div class="pizza-img-slice">
-                                        <div class="ingredient"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/base-layer.png" alt=""></div>
-                                        <div class="ingredient hide sousege"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/sousege.png" alt=""></div>
-                                        <div class="ingredient hide bacon"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/bacon.png" alt=""></div>
-                                        <div class="ingredient hide mushroom"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/mushroom.png" alt=""></div>
-                                        <div class="ingredient hide octopus"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/octopus.png" alt=""></div>
-                                        <div class="ingredient hide tomato"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/tomato.png" alt="" srcset=""></div>
-                                        <div class="ingredient hide olives"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/olives.png" alt=""></div>
-                                        <div class="ingredient hide pepper"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/pepper.png" alt=""></div>
-                                        <div class="ingredient hide prawn"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/prawn.png" alt=""></div>
-                                        <div class="ingredient hide onion"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/onion.png" alt=""></div>
-                                        <div class="ingredient hide ruccola"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/ruccola.png" alt=""></div>
-                                        <div class="ingredient hide mint"><img class="img-ingredient"
-                                                src="./image/pizza-ingredient-image/mint.png" alt=""></div>
-                                    </div>
-                                    <div class="ingredients-pizza">
-                                        <div class="sousege ingredients-pizza-open">
-                                            <span>
-                                                <img class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/sousege-img-button.png" alt="">
-                                            </span>
-                                            Sousege
-                                        </div>
-                                        <div class="bacon ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/bacon-img-button.png"
-                                                    alt=""></span>Bacon</div>
-                                        <div class="mushroom ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/mushroom-img-button.png"
-                                                    alt=""></span>Mushroom
-                                        </div>
-                                        <div class="octopus ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/octopus-img-button.png"
-                                                    alt=""></span>Octopus
-                                        </div>
-                                        <div class="tomato ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/tomato-img-button.png"
-                                                    alt=""></span>Tomato
-                                        </div>
-                                        <div class="olives ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/olives-img-button.png"
-                                                    alt=""></span>Olives
-                                        </div>
-                                        <div class="pepper ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/pepper-img-button.png"
-                                                    alt=""></span>Pepper
-                                        </div>
-                                        <div class="prawn ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image" src="./image/pizza-ingredient-image/pravn-img-button.png
-                            " alt=""></span>Prawn</div>
-                                        <div class="onion ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/onion-img-button.png"
-                                                    alt=""></span>Onion</div>
-                                        <div class="ruccola ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/ruccola-img-button.png"
-                                                    alt=""></span>Ruccola
-                                        </div>
-                                        <div class="mint ingredients-pizza-open"> <span><img
-                                                    class="ingredients-pizza-image"
-                                                    src="./image/pizza-ingredient-image/mint-img-button.png"
-                                                    alt=""></span>Mint</div>
-                                    </div>
-
-                                </div>
-                                <div><button class="add-to-order">Add To Order</button></div>
+            <div class="konstructor-screen">
+                <div class="kostructor__screen-title">Make Pizza To Your Taste</div>
+                <div class="choose-size">Сhoose the size of the pizza and the ingredients</div>
+                <div class="size-pizza">
+                    <input id="one" type="radio" name="Number-employees" class="input-radio" checked>
+                    <label class="label-radio" for="one">L</label>
+                    <input id="two" type="radio" name="Number-employees" class="input-radio">
+                    <label class="label-radio" for="two">XL</label>
+                    <input id="three" type="radio" name="Number-employees" class="input-radio">
+                    <label class="label-radio" for="three">XXL</label>
+                </div>
+                <div class="select-ingredient">
+                    <div class="pizza-img-slice">
+                        <div class="ingredient">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/base-layer.png" alt="pizza">
                         </div>
-                        <div class="check__screen">
-                            <div class="check__screen-header">
-                                <div>
-                                    <a href="">
-                                        <div class="logo"><img src="./image/🦆 icon _Pizza Slice_.png"
-                                                alt="pizza-favicon">Mania
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="" class="check__screen-link"><img class="icon_searchLocation"
-                                        src="./image/🦆 icon _SearchLocation_.png" alt="search">Help
-                                </a>
-                                <a href="" class="check__screen-link"><img class="icon_user"
-                                        src="./image/🦆 icon _User Plus_.png" alt="user">Sing In
-                            </div>
-                            </a>
-                            <div class="img-pizza"><img src="./image/Pizza-slice.png" alt="pizza"></div>
-                            <div class="check__screen-main">
-                                <div class="check__screen-info">
-                                    <div class="check__screen-account">
-                                        <div class="check__screen-icon"><img src="./image/Users_icon.png" alt=""></div>
-                                        <div class="check__screen-title">Account</div>
-                                        <div class="check__screen-adress">To place your order now, log in to your
-                                            existing account
-                                            or sign up.</div>
-                                        <div class="check__screen-button">
-                                            <button class="check__screen-button-have">Have an account ?<br> <span
-                                                    class="text-white">Log in</span></button>
-                                            <button class="check__screen-button-new">New to Mania?</br><span
-                                                    class="text-white">Sign
-                                                    in</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="check__screen-address accordion">
-                                        <div class="check__screen-icon center-icon"><img src="./image/Location_icon.png"
-                                                alt="">
-                                        </div>
-                                        Delivery address
-                                    </div>
-                                    <div class="delivery-addres hide">
-                                        <div class="delivery-addres-plase">Enter the shipping address
-                                            <input class="input-address" type="text">
-                                        </div>
-
-                                    </div>
-                                    <div class="check__screen-payment accordion">
-                                        <div class="check__screen-icon center-icon"><img
-                                                src="./image/🦆 icon _Credit Card_.png" alt="">
-                                        </div>
-                                        Payment
-                                    </div>
-                                    <div class="payment__card hide">
-                                        <a><img class="payment-card-icon" src="./image/MasterCard-Logo.png" alt=""></a>
-                                        <a><img class="payment-card-icon" src="./image/google-pay-apple.png" alt=""></a>
-                                        <a><img class="payment-card-icon" src="./image/Logo-visa-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="user-check hide">
-                                    <div class="user-check-header">
-                                        <div><img src="./image/piza-screen-check.png" alt=""></div>
-                                        <div class="user-check-header-title">
-                                            <div>Wow ! Pizza</div>
-                                            <div>delivered to this location</div>
-                                        </div>
-                                    </div>
-                                    <div class="name-and-quantity">
-                                        <div>Apply your coupon code <span class="cupon-code"># xxx</span></div>
-                                        <div class="name-and-quantity-counter">
-                                            <div>
-                                                <div class="name__check-pizza">Pizza</div>
-                                            </div>
-                                            <div class="count">
-                                                <div class="less">-</div>
-                                                <div class="number-pieces">1</div>
-                                                <div class="more">+</div>
-                                            </div>
-                                            <div class="discounted_price">
-                                                <div class="discounted_price-all">$ <span
-                                                        class="discounted_price-all-number"></span></div>
-                                                <div class="price">$ <span class="price-number"></span> </div>
-                                            </div>
-                                        </div>
-                                        <div class="user-check-fun-question">" Any massage to your Loving one ? "</div>
-                                    </div>
-                                    <div class="payable">
-                                        <div class="payable-header">Bill Details</div>
-                                        <div class="payable-string">
-                                            <div class="payable-text">Item total</div>
-                                            <div class="payable-text">$ <span class="payable-item-total"></span></div>
-                                        </div>
-                                        <hr>
-                                        <div class="payable-string">
-                                            <div class="payable-text">Delivery partner fee</div>
-                                            <div class="payable-text">$100<span>FREE</span></div>
-                                        </div>
-                                        <div class="payable-string">
-                                            <div class="payable-text">Item Discount</div>
-                                            <div class="payable-text">-$<span class="payable-item-discont"></span>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="payable-string">
-                                            <div class="payable-text">Taxes and Charges</div>
-                                            <div class="payable-text">$20</div>
-                                        </div>
-                                        <hr class="thick-line">
-                                        <div class="payable-string">
-                                            <div class="payable-text">To Pay </div>
-                                            <div class="payable-text bold">$<span class="payable-to-pay"></span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="ingredient hide sousege">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/sousege.png" alt="sousege">
                         </div>
+                        <div class="ingredient hide bacon">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/bacon.png" alt="bacon">
+                        </div>
+                        <div class="ingredient hide mushroom">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/mushroom.png"
+                                alt="mushroom">
+                        </div>
+                        <div class="ingredient hide octopus">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/octopus.png" alt="octopus">
+                        </div>
+                        <div class="ingredient hide tomato">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/tomato.png" alt="tomato">
+                        </div>
+                        <div class="ingredient hide olives">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/olives.png" alt="olives">
+                        </div>
+                        <div class="ingredient hide pepper">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/pepper.png" alt="pepper">
+                        </div>
+                        <div class="ingredient hide prawn">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/prawn.png" alt="prawn">
+                        </div>
+                        <div class="ingredient hide onion">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/onion.png" alt="onion">
+                        </div>
+                        <div class="ingredient hide ruccola">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/ruccola.png" alt="ruccola">
+                        </div>
+                        <div class="ingredient hide mint">
+                            <img class="img-ingredient" src="./image/pizza-ingredient-image/mint.png" alt="mint">
+                        </div>
+                    </div>
+                    <div class="ingredients-pizza">
+                        <div class="sousege ingredients-pizza-open">
+                            <span>
+                                <img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/sousege-img-button.png" alt="sousege">
+                            </span>
+                            Sousege
+                        </div>
+                        <div class="bacon ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/bacon-img-button.png" alt="bacon"></span>Bacon
+                        </div>
+                        <div class="mushroom ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/mushroom-img-button.png"
+                                    alt="mushroom"></span>Mushroom
+                        </div>
+                        <div class="octopus ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/octopus-img-button.png"
+                                    alt="octopus"></span>Octopus
+                        </div>
+                        <div class="tomato ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/tomato-img-button.png"
+                                    alt="tomato"></span>Tomato
+                        </div>
+                        <div class="olives ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/olives-img-button.png"
+                                    alt="olives"></span>Olives
+                        </div>
+                        <div class="pepper ingredients-pizza-open">
+                            <span>
+                                <img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/pepper-img-button.png" alt="pepper">
+                            </span>
+                            Pepper
+                        </div>
+                        <div class="prawn ingredients-pizza-open">
+                            <span>
+                                <img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/pravn-img-button.png" alt="pravn">
+                            </span>Prawn
+                        </div>
+                        <div class="onion ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/onion-img-button.png" alt=""></span>Onion</div>
+                        <div class="ruccola ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/ruccola-img-button.png" alt=""></span>Ruccola
+                        </div>
+                        <div class="mint ingredients-pizza-open"> <span><img class="ingredients-pizza-image"
+                                    src="./image/pizza-ingredient-image/mint-img-button.png" alt=""></span>Mint</div>
+                    </div>
 
                 </div>
-                <footer>Pizza Mania © 2023 All rights reserved</footer>
+                <div><button class="add-to-order">Add To Order</button></div>
+            </div>
+            <div class="check__screen">
+                <div class="check__screen-header">
+                    <div>
+                        <a href="">
+                            <div class="logo"><img src="./image/iconPizzaSlice.png" alt="pizza-favicon">Mania
+                            </div>
+                        </a>
+                    </div>
+                    <a href="" class="check__screen-link"><img class="icon_searchLocation"
+                            src="./image/iconSearchLocation.png" alt="search">Help
+                    </a>
+                    <a href="" class="check__screen-link"><img class="icon_user" src="./image/iconUserPlus.png"
+                            alt="user">Sing In
+                </div>
+                </a>
+                <div class="img-pizza"><img src="./image/Pizza-slice.png" alt="pizza"></div>
+                <div class="check__screen-main">
+                    <div class="check__screen-info">
+                        <div class="check__screen-account">
+                            <div class="check__screen-icon"><img src="./image/Users_icon.png" alt="Users_icon.png">
+                            </div>
+                            <div class="check__screen-title">Account</div>
+                            <div class="check__screen-adress">To place your order now, log in to your
+                                existing account
+                                or sign up.
+                            </div>
+                            <div class="check__screen-button">
+                                <button class="check__screen-button-have">Have an account ?<br>
+                                    <span class="text-white">Log in</span></button>
+                                <button class="check__screen-button-new">New to Mania?<br>
+                                    <span class="text-white">Signin</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="check__screen-address accordion">
+                            <div class="check__screen-icon center-icon"><img src="./image/Location_icon.png"
+                                    alt="Location_icon">
+                            </div>
+                            Delivery address
+                        </div>
+                        <div class="delivery-addres hide">
+                            <div class="delivery-addres-plase">Enter the shipping address
+                                <input class="input-address" type="text">
+                            </div>
+
+                        </div>
+                        <div class="check__screen-payment accordion">
+                            <div class="check__screen-icon center-icon"><img src="./image/iconCreditCard.png"
+                                    alt="iconCreditCard">
+                            </div>
+                            Payment
+                        </div>
+                        <div class="payment__card hide">
+                            <a><img class="payment-card-icon" src="./image/MasterCard-Logo.png" alt=""></a>
+                            <a><img class="payment-card-icon" src="./image/google-pay-apple.png" alt=""></a>
+                            <a><img class="payment-card-icon" src="./image/Logo-visa-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="user-check hide">
+                        <div class="user-check-header">
+                            <div><img src="./image/piza-screen-check.png" alt=""></div>
+                            <div class="user-check-header-title">
+                                <div>Wow ! Pizza</div>
+                                <div>delivered to this location</div>
+                            </div>
+                        </div>
+                        <div class="name-and-quantity">
+                            <div>Apply your coupon code <span class="cupon-code"># xxx</span></div>
+                            <div class="name-and-quantity-counter">
+                                <div>
+                                    <div class="name__check-pizza">Pizza</div>
+                                </div>
+                                <div class="count">
+                                    <div class="less">-</div>
+                                    <div class="number-pieces">1</div>
+                                    <div class="more">+</div>
+                                </div>
+                                <div class="discounted_price">
+                                    <div class="discounted_price-all">$ <span
+                                            class="discounted_price-all-number"></span></div>
+                                    <div class="price">$ <span class="price-number"></span> </div>
+                                </div>
+                            </div>
+                            <div class="user-check-fun-question">" Any massage to your Loving one ? "</div>
+                        </div>
+                        <div class="payable">
+                            <div class="payable-header">Bill Details</div>
+                            <div class="payable-string">
+                                <div class="payable-text">Item total</div>
+                                <div class="payable-text">$ <span class="payable-item-total"></span></div>
+                            </div>
+                            <hr>
+                            <div class="payable-string">
+                                <div class="payable-text">Delivery partner fee</div>
+                                <div class="payable-text">$100<span>FREE</span></div>
+                            </div>
+                            <div class="payable-string">
+                                <div class="payable-text">Item Discount</div>
+                                <div class="payable-text">-$<span class="payable-item-discont"></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="payable-string">
+                                <div class="payable-text">Taxes and Charges</div>
+                                <div class="payable-text">$20</div>
+                            </div>
+                            <hr class="thick-line">
+                            <div class="payable-string">
+                                <div class="payable-text">To Pay </div>
+                                <div class="payable-text bold">$<span class="payable-to-pay"></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>Pizza Mania © 2023 All rights reserved</footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./script/script.js"></script>

@@ -209,12 +209,6 @@ button:active {
     position: absolute;
 }
 
-.img__big-pizza {
-    height: 520px;
-    transform: translateX(-300px);
-    animation: 200s rotate linear infinite;
-}
-
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -223,6 +217,12 @@ button:active {
     to {
         transform: rotate(360deg);
     }
+}
+
+.img__big-pizza {
+    height: 520px;
+    transform: translateX(-300px);
+    animation: 200s rotate linear infinite;
 }
 
 .menu__screen-assortment {
@@ -752,11 +752,16 @@ input {
 
 .pizza-img-slice {
     position: relative;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ingredient {
     position: absolute;
     margin: 30px 0 0 50px;
+    animation: 100s rotate linear infinite;
 }
 
 .img-ingredient {
@@ -765,6 +770,11 @@ input {
 
 .konstructor-screen {
     background-color: var(--color-background-day);
+}
+
+.select-ingredient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .menu__screen-pizza-by-slice {
@@ -875,7 +885,6 @@ input {
 }
 
 .ingredients-pizza {
-    margin-left: 60vw;
     font-size: 20px;
     font-weight: 500;
     color: var(--color-text-black-day);
@@ -961,6 +970,28 @@ input {
     padding: 12px;
 }
 
+@media screen and (max-width: 970px) {
+    .select-ingredient {
+        display: block;
+    }
+
+    .ingredients-pizza {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pizza-img-slice {
+        position: relative;
+        height: 460px;
+    }
+
+    .size-pizza {
+        width: 100%;
+    }
+    .label-radio {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width:830px) {
     :root {
         overflow-x: hidden;
@@ -969,10 +1000,6 @@ input {
     .header__menu {
         flex-direction: column;
         align-items: start;
-    }
-
-    .label-radio {
-        width: 20%;
     }
 
     .header-menu-right {
@@ -1166,6 +1193,10 @@ input {
     .add-to-order {
         margin: 40px 0 30px 400px;
     }
+
+    .select-ingredient {
+        display: block;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -1200,6 +1231,12 @@ input {
 
     .reservation-info-client {
         line-height: 75px;
+    }
+
+    .ingredients-pizza-open {
+        padding: 5px 15px;
+        width: 120px;
+        font-size: 16px;
     }
 }
 

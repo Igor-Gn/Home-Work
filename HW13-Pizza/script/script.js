@@ -75,10 +75,28 @@ function checkReservationTime() {
         reservationTime.value = '';
         return;
     };
-
+    const dateNow = new Date();
     let timeValue = reservationTime.value;
+    let insertedDate = clientReservationDate.valueAsDate.getDate();
+
+    const timeNowHours = dateNow.getUTCHours() + 3;
+    const timeNowMinutes = dateNow.getUTCMinutes();
+    let dateOfMonth = String(new Date().getDate());
+    console.log('timeNowHours', timeNowHours);
+    console.log('timeNowMinutes', timeNowMinutes);
+    console.log(insertedDate == dateOfMonth);
     let a = timeValue.split(':')[0] * 60 + timeValue.split(':')[1] * 1;
-    if (a < 539 || a > 1261) {
+    if (insertedDate == dateOfMonth) {
+        const timeNow = timeNowHours * 60 + timeNowMinutes;
+        console.log(timeNow);
+        if ((timeNow + 60) > a) {
+            Swal.fire('Виберіть час пізніше');
+            reservationTime.value = '';
+            return;
+        }
+    }
+    console.log('timeValue', timeValue);
+    if (a < 540 || a > 1260) {
         Swal.fire('Столик можливо зарезервувати з 09:00 до 21:00');
     }
 };
@@ -319,7 +337,7 @@ function ValidDate() {
         if (month.length == 1) {
             month = 0 + month;
         }
-        let dateOfMonth = String(new Date().getDay());
+        let dateOfMonth = String(new Date().getDate());
         if (dateOfMonth.length == 1) {
             dateOfMonth = 0 + dateOfMonth;
         }
